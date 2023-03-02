@@ -5,6 +5,13 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+h1 {
+    /* font-size: 72px; */
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 @media screen and (min-width: 480px) {
     .card:nth-child(7n + 1) {
