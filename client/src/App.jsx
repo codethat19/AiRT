@@ -8,18 +8,21 @@ import { Home, CreatePost } from './pages';
 const App = () => {
   return (
     <BrowserRouter>
-      <header className="w-full flex justify-between 
-      items-center bg-white sm:px-8 px-4 py-4 
+      <header className="bg-black w-full flex justify-between 
+      items-center sm:px-8 px-4 py-4 
       border-b border-b-[#e6ebf4]">
       <Link to='/'>
-      <div style={{display: "inline", fontWeight: "bold"}}className='text-lg'>A<div style={{display: "inline"}} className='text-sm'>i</div>RT Powered by</div><img src={logo} alt="logo" className="w-20 
-        object-contain" /> 
+      <div style={{display: "inline", fontWeight: "bold"}}className='text-lg text-white bg-black'>
+        A
+        <div style={{display: "inline"}} className='text-sm bg-black'>i</div>
+        RT Powered by</div>
+        <img src={logo} alt="logo" className="object-contain logo bg-black" /> 
       </Link>
       <Link to='/create-post' className='font-inter font-medium bg-[#0d6efd]
       text-white px-4 py-2 rounded-md'>Create</Link>
       </header>
-      <main className='sm:p-8 px-4 py-8
-      w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]'>
+      <main className='bg-[rgb(236, 179, 101)] sm:p-8 px-4 py-8
+      w-full min-h-[calc(100vh-73px)]'>
         <Routes>
           <Route path='/' element={<Home /> } />
           <Route path='/create-post' element={<CreatePost /> }/>

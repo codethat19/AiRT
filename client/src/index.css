@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+body {
     font-family: 'Inter', sans-serif;
+    background-color: #181818;
+}
+.logo {
+    height: 5%;
+    width: 5%;
 }
 h1 {
     /* font-size: 72px; */
     text-transform: uppercase;
-    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    background: linear-gradient(to right, #59f3f3 0%, #000000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -17,6 +22,16 @@ h1 {
     .card:nth-child(7n + 1) {
         grid-column: auto/span 2;
         grid-row: auto/span 2;
+    }
+    .logo {
+        height: 10%;
+        width: 10%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        height: 22%;
+        width: 22%;
     }
 }
 
